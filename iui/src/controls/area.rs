@@ -1,12 +1,12 @@
 //! Provides a way to allocate an area in the window for custom drawing.
 
-use controls::Control;
-use draw;
+use crate::controls::Control;
+use crate::draw;
 use std::mem;
 use std::os::raw::c_int;
-use ui::UI;
-pub use ui_sys::uiExtKey as ExtKey;
-use ui_sys::{
+use crate::ui::UI;
+pub use crate::ui_sys::uiExtKey as ExtKey;
+use crate::ui_sys::{
     self, uiArea, uiAreaDrawParams, uiAreaHandler, uiAreaKeyEvent, uiAreaMouseEvent, uiControl,
 };
 

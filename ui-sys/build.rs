@@ -177,6 +177,7 @@ fn main() {
             link("windowscodecs", false);
         } else if unix {
             base_config.include(src_path("/unix"));
+            base_config.flag("-w");
 
             let pkg_cfg = pkg_config::Config::new().probe("gtk+-3.0").unwrap();
             for inc in pkg_cfg.include_paths {
@@ -235,6 +236,7 @@ fn main() {
             }
         } else if apple {
             base_config.include(src_path("/darwin"));
+            base_config.flag("-w");
 
             for filename in [
                 "darwin/aat.m",

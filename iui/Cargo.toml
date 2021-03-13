@@ -2,6 +2,7 @@
 name = "iui"
 version = "0.3.0"
 authors = ["Leonora Tindall <lfstindall@gmail.com>"]
+edition = "2018"
 
 # A short blurb about the package. This is not rendered in any format when
 # uploaded to crates.io (aka this is not markdown).
@@ -38,8 +39,8 @@ maintenance = { status = "actively-developed" }
 [dependencies]
 bitflags = "1"
 libc = "0.2"
-failure = "0.1"
-ui-sys = { path = "../ui-sys", version = "0.2.1" }
+thiserror = "1"
+ui-sys = { path = "../ui-sys", version = "0.2.2" }
 regex = "1"
 lazy_static = "1"
 

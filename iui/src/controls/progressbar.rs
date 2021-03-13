@@ -1,7 +1,7 @@
 use super::Control;
 use std::mem;
-use ui::UI;
-use ui_sys::{self, uiControl, uiProgressBar};
+use crate::ui::UI;
+use crate::ui_sys::{self, uiControl, uiProgressBar};
 
 /// An enum representing the value of a `ProgressBar`.
 ///

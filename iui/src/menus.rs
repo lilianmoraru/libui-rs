@@ -1,11 +1,11 @@
 //! Menus that appear at the top of windows, and the items that go in them.
 
-use callback_helpers::{from_void_ptr, to_heap_ptr};
-use controls::Window;
+use crate::callback_helpers::{from_void_ptr, to_heap_ptr};
+use crate::controls::Window;
 use std::ffi::CString;
 use std::os::raw::{c_int, c_void};
-use ui_sys::{self, uiMenu, uiMenuItem, uiWindow};
-use UI;
+use crate::ui_sys::{self, uiMenu, uiMenuItem, uiWindow};
+use crate::UI;
 
 /// A `MenuItem` represents an item that is shown in a `Menu`. Note that, unlike many controls,
 /// the text on `MenuItem`s cannot be changed after creation.

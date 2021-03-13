@@ -4,14 +4,14 @@
 //! `\r\n` for display are added and removed by the controls.
 
 use super::Control;
-use callback_helpers::{from_void_ptr, to_heap_ptr};
+use crate::callback_helpers::{from_void_ptr, to_heap_ptr};
 use std::ffi::{CStr, CString};
 use std::i32;
 use std::mem;
 use std::os::raw::c_void;
-use str_tools::{from_toolkit_string, to_toolkit_string};
-use ui::UI;
-use ui_sys::{
+use crate::str_tools::{from_toolkit_string, to_toolkit_string};
+use crate::ui::UI;
+use crate::ui_sys::{
     self, uiCheckbox, uiCombobox, uiControl, uiEntry, uiMultilineEntry, uiRadioButtons, uiSlider,
     uiSpinbox,
 };

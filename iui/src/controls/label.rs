@@ -1,7 +1,7 @@
 use super::Control;
 use std::ffi::{CStr, CString};
 use std::mem;
-use ui::UI;
+use crate::ui::UI;
 use ui_sys::{self, uiControl, uiLabel};
 
 define_control! {

@@ -1,8 +1,8 @@
-use callback_helpers::{from_void_ptr, to_heap_ptr};
-use error::UIError;
-use ffi_tools;
+use crate::callback_helpers::{from_void_ptr, to_heap_ptr};
+use crate::error::UIError;
+use crate::ffi_tools;
 use std::os::raw::{c_int, c_void};
-use ui_sys;
+use crate::ui_sys;
 
 use std::ffi::CStr;
 use std::marker::PhantomData;
@@ -11,7 +11,7 @@ use std::rc::Rc;
 use std::thread;
 use std::time::{Duration, SystemTime};
 
-use controls::Window;
+use crate::controls::Window;
 
 /// RAII guard for the UI; when dropped, it uninits libUI.
 struct UIToken {

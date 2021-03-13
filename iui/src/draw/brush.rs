@@ -1,7 +1,7 @@
-use draw::DrawContext;
+use crate::draw::DrawContext;
 use std::marker::PhantomData;
 use std::ptr;
-use ui_sys::{self, uiDrawBrush};
+use crate::ui_sys::{self, uiDrawBrush};
 
 pub use ui_sys::uiDrawBrushGradientStop as BrushGradientStop;
 

@@ -20,8 +20,6 @@
 #[macro_use]
 extern crate bitflags;
 #[macro_use]
-extern crate failure;
-#[macro_use]
 extern crate lazy_static;
 extern crate libc;
 extern crate regex;
@@ -42,8 +40,8 @@ pub use ui::{EventLoop, UI};
 
 /// Common imports are packaged into this module. It's meant to be glob-imported: `use iui::prelude::*`.
 pub mod prelude {
-    pub use controls::LayoutStrategy;
-    pub use controls::{NumericEntry, TextEntry};
-    pub use controls::{Window, WindowType};
-    pub use ui::UI;
+    pub use crate::controls::LayoutStrategy;
+    pub use crate::controls::{NumericEntry, TextEntry};
+    pub use crate::controls::{Window, WindowType};
+    pub use crate::ui::UI;
 }

@@ -1,10 +1,10 @@
 use super::Control;
-use error::UIError;
+use crate::error::UIError;
 use std::ffi::{CStr, CString};
 use std::mem;
 use std::os::raw::c_int;
-use ui::UI;
-use ui_sys::{self, uiAlign, uiAt, uiBox, uiControl, uiGrid, uiGroup, uiSeparator, uiTab};
+use crate::ui::UI;
+use crate::ui_sys::{self, uiAlign, uiAt, uiBox, uiControl, uiGrid, uiGroup, uiSeparator, uiTab};
 
 /// Defines the ways in which the children of boxes can be layed out.
 pub enum LayoutStrategy {
